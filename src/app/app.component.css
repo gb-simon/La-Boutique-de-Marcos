@@ -1,8 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+    
 .container {
   display: block;
-  height: 500px;
-  width: 500px;
-  padding: 2em;
+  height: 100vh;
 }

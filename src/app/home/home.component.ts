@@ -23,4 +23,7 @@ export class HomeComponent {
     this.currentSlide = next === this.slides.length ? 0 : next;
     console.log("next clicked, new current slide is: ", this.currentSlide);
   }
+
+  title = "La Boutique";
+
 }

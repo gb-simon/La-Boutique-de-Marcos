@@ -1,12 +1,35 @@
 <!-- carousel -->
-<div class="carousel">
+<div>
   <ng-container *ngFor="let slide of slides; let i = index">
-    <img
-      *ngIf="i === currentSlide"
-      [src]="slide.src"
-      class="slide"
-    />
+    <img *ngIf="i === currentSlide" [src]="slide.src" class="slide" />
   </ng-container>
+
+  <div class="absolute">
+    <section
+      class="absolute flex items-center text-white flex flex-wrap pl-4 md:pl-64"
+    >
+      <div class="w-full md:w-1/2">
+        <div>
+          <h1 class="text-6xl font-bold">{{title}}</h1>
+        </div>
+      </div>
+      <div class="pl-80 ml-36 w-full pt-24 md:w-1/2">
+        <div class="p-4">
+          <form class="text-3 xl absolute">
+            <input
+              class="text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 rounded-l-full focus:ring-green-900 focus:border-transparent"
+              type="search"
+              placeholder="Search in LaBoutique "
+            />
+            <p class="text-white mt-4">
+              Trending: radio, phones, television, coffee
+            </p>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- controls -->
   <button class="control prev" (click)="onPreviousClick()">

@@ -38,7 +38,6 @@ h1 {
   font-weight: bold;
   font-size: 3em;
   user-select: none;
-  height: 100%;
   opacity: 80%;
   transition: opacity 150ms cubic-bezier(0.25, 0.46, 0.45, 0.84);
   /* Position the buttons */
@@ -60,18 +59,28 @@ h1 {
   border-bottom: 0.1em solid white;
   width: 0.5em;
   height: 0.5em;
+  text-decoration: none !important;
+
 }
+
+@media only screen and (max-width: 600px) {
+  .arrow {
+    width: 0.2em;
+    height: 0.2em;
+    text-decoration: none !important;
+  }
+
+  .arrow.left {
+    transform: rotate(45deg);
+  }
+  .arrow.right {
+    transform: rotate(225deg);
+  }
+}
+
 .arrow.left {
   transform: rotate(45deg);
 }
 .arrow.right {
   transform: rotate(225deg);
-}
-
-/* Styles for wrapping the search box */
-
-.main {
-  width: 50%;
-  margin: 50px auto;
-  position: absolute;
 }

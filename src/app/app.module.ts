@@ -4,14 +4,12 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./home/home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { FooterComponent } from './footer/footer.component';
-import { CommerceComponent } from './commerce/commerce.component';
-import { FiltersComponent } from './filters/filters.component';
+import { FooterComponent } from "./footer/footer.component";
+import { CommerceComponent } from "./commerce/commerce.component";
+import { FiltersComponent } from "./filters/filters.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
-import { ProductComponent } from './product/product.component';
-
-
+import { ProductComponent } from "./product/product.component";
 
 @NgModule({
   declarations: [

@@ -9,10 +9,12 @@ import { environment } from "../../environments/environment";
 })
 export class HomeComponent {
   title = "La Boutique";
+  trends = "radio, phones, television, coffee"
   public searchKeyword = "";
   public data = [];
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&query=`;
 
+  
   @Input() slides;
 
   currentSlide = 0;

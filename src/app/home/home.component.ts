@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { environment } from "../../environments/environment";
+import { environment } from "../../../env";
 
 @Component({
   selector: "app-home",
@@ -15,7 +15,7 @@ export class HomeComponent {
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&query=`;
 
   @Input() slides;
-  
+
   constructor(private http: HttpClient) {}
 
   searchImage() {
@@ -23,5 +23,4 @@ export class HomeComponent {
       this.data = res["results"];
     });
   }
-
 }

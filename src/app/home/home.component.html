@@ -1,1 +1,46 @@
-<p>home works!</p>
+<div
+  class="background bg-cover bg-auto bg-no-repeat bg-center..."
+  style="
+    background-image: url(https://images.unsplash.com/photo-1510352266567-8c9e0517eb5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+  "
+> <app-header></app-header> 
+
+  <div class="pt-36">
+    <section class="flex items-center text-white flex flex-wrap pl-4 md:pl-64">
+      <div class="w-full md:w-1/2">
+        <div>
+          <h1 class="md:text-6xl text-4xl font-bold bg-indigo-600">
+            {{ title }}
+          </h1>
+        </div>
+      </div>
+      <div class="md:pl-80 md:ml-36 md:w-full md:pb-24 md:w-1/2">
+        <div class="p-4">
+          <form class="md:text-2xl text-1xl">
+            <input
+              class="md:text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent"
+              type="search"
+              placeholder="Search in LaBoutique "
+              name="searchKeyword"
+              [(ngModel)]="searchKeyword"
+            />
+            <button class="ml-4 btn btn-lg btn-success" (click)="searchImage()">
+              Go</button
+            >​
+            <p class="md:text-white mt-4">
+              Trending: radio, phones, television, coffee
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngFor="let p of data">
+    ​
+    <div style="width: 45%; padding-left: 15px">
+      ​ <img [src]="p.urls.regular" />​
+    </div>
+    ​
+  </div>
+</div>

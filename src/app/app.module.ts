@@ -9,6 +9,7 @@ import { CommerceComponent } from './commerce/commerce.component';
 import { FiltersComponent } from './filters/filters.component';
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -20,6 +21,7 @@ import { FormsModule } from "@angular/forms";
     FooterComponent,
     CommerceComponent,
     FiltersComponent,
+    ProductComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule, HttpClientModule],
   providers: [],

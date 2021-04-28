@@ -1,5 +1,5 @@
 <!-- carousel -->
-<div class="bg-green-800">
+<div class="bg-fixed backdrop-blur-md bg-auto bg-no-repeat bg-center..." style="background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80)">
   <div class="pt-36">
     <section class="flex items-center text-white flex flex-wrap pl-4 md:pl-64">
       <div class="w-full md:w-1/2">
@@ -9,7 +9,7 @@
       </div>
       <div class="md:pl-80 md:ml-36 md:w-full md:pb-24 md:w-1/2">
         <div class="p-4">
-          <form class="md:text-2xl text-1xl">
+          <form style="color:black" class="md:text-2xl text-1xl">
             <input
               class="md:text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent"
               type="search"
@@ -17,8 +17,8 @@
               name="searchKeyword"
               [(ngModel)]="searchKeyword"
             />
-            <button class="btn btn-lg btn-success" (click)="searchImage()">
-              Search Images</button
+            <button class="ml-4 btn btn-lg btn-success" (click)="searchImage()">
+              Go </button
             >​
             <p class="md:text-white mt-4">
               Trending: radio, phones, television, coffee

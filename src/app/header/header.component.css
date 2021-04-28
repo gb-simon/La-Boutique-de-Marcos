@@ -6,7 +6,7 @@
   background-color: rgba(0, 0, 0, 0.616);
   color: white;
   text-align: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .button {

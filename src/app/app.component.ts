@@ -20,5 +20,4 @@ export class AppComponent {
         "https://www.solidbackgrounds.com/images/2560x1440/2560x1440-light-brown-solid-color-background.jpg",
     },
   ];
-  title = "La Boutique";
 }

@@ -6,9 +6,10 @@ import { HomeComponent } from "./home/home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FooterComponent } from './footer/footer.component';
 import { CommerceComponent } from './commerce/commerce.component';
+import { FiltersComponent } from './filters/filters.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent, CommerceComponent,],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, FooterComponent, CommerceComponent, FiltersComponent,],
   imports: [BrowserModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],

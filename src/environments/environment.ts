@@ -1,3 +1,4 @@
+const ACCESS_KEY = "ZrFuDKyLgJ4ZUMHdVzGTQWkA3qjU9E_vrVAS5IDGpio"
 
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
@@ -5,7 +6,7 @@
 
 export const environment = {
   production: false,
-  client_id: "ZrFuDKyLgJ4ZUMHdVzGTQWkA3qjU9E_vrVAS5IDGpio"
+  client_id: ACCESS_KEY
 };
 
 /*

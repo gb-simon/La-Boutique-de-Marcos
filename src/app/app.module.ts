@@ -8,6 +8,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { CommerceComponent } from "./commerce/commerce.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from "@angular/forms";
     HomeComponent,
     FooterComponent,
     CommerceComponent,
+    ProductComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule, HttpClientModule],
   providers: [],

@@ -14,7 +14,12 @@
               class="md:text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent"
               type="search"
               placeholder="Search in LaBoutique "
+              name="searchKeyword"
+              [(ngModel)]="searchKeyword"
             />
+            <button class="btn btn-lg btn-success" (click)="searchImage()">
+              Search Images</button
+            >​
             <p class="md:text-white mt-4">
               Trending: radio, phones, television, coffee
             </p>
@@ -22,5 +27,13 @@
         </div>
       </div>
     </section>
+  </div>
+
+  <div *ngFor="let p of data">
+    ​
+    <div style="width: 45%; padding-left: 15px">
+      ​ <img [src]="p.urls.regular" />​
+    </div>
+    ​
   </div>
 </div>

@@ -1,4 +1,3 @@
-import {ACCESS_KEY} from "./environment.prod";
 
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
@@ -6,7 +5,7 @@ import {ACCESS_KEY} from "./environment.prod";
 
 export const environment = {
   production: false,
-  client_id: ACCESS_KEY
+  client_id: "ZrFuDKyLgJ4ZUMHdVzGTQWkA3qjU9E_vrVAS5IDGpio"
 };
 
 /*

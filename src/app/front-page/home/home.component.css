@@ -6,6 +6,9 @@ div {
   color: white;
 }
 
+input{
+  color: black !important;
+}
 .background {
   /* Add the blur effect */
 

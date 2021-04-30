@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { environment } from "../../../environments/environment";
 import { HttpClient } from "@angular/common/http";
+
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -15,12 +16,12 @@ export class HomeComponent {
   public data = [];
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&query=`;
   trends = "radio, phones, television, coffee";
-  
-  constructor(private http: HttpClient) {}
 
+  constructor(private http: HttpClient) {}
 
   searchImage() {
     this.http.get(this.url + this.searchKeyword).subscribe((res) => {
       this.data = res["results"];
     });
-  }}
+  }
+}

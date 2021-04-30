@@ -1,10 +1,22 @@
-<div class="m-6 pt-6 justify-center items-center min-h-screen">
+<input
+  class="md:text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent"
+  type="search"
+  placeholder="Search in LaBoutique "
+  name="searchKeyword"
+  [(ngModel)]="searchKeyword"
+/>
+<button class="ml-4 btn btn-lg btn-success" (click)="searchImage()">Go</button>​
+
+<div
+  *ngFor="let p of data"
+  class="m-6 pt-6 justify-center items-center min-h-screen"
+>
   <div class="w-full p-2">
     <div class="bg-white shadow-lg hover:shadow-xl rounded-lg">
       <div
         class="bg-gray-400 h-64 rounded-t-lg p-4 bg-no-repeat bg-center bg-cover"
-        style="background-image: url(https://source.unsplash.com/random)"
-      >
+        [src]="p.urls.regular"
+        >
         <div class="text-right">
           <button
             class="text-pink-500 hover:text-pink-600 p-2 rounded-full"

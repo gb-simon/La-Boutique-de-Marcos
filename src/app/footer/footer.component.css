@@ -5,13 +5,13 @@
 
 
 .footer {
-  position: static;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.616);
   color: white;
   text-align: center;
   padding: 10px;
+  
 }
 
 

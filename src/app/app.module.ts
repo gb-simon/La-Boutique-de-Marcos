@@ -10,6 +10,7 @@ import { FiltersComponent } from "./filters/filters.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { ProductComponent } from "./product/product.component";
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProductComponent } from "./product/product.component";
     CommerceComponent,
     FiltersComponent,
     ProductComponent,
+    SearchComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule, HttpClientModule],
   providers: [],

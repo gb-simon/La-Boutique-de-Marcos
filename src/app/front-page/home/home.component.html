@@ -5,9 +5,9 @@
       background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=894&q=80);
     "
   >
-    <app-header></app-header>
+    <app-header class="home"></app-header>
 
-    <div class="pt-36">
+    <div class="home pt-36">
       <section
         class="flex items-center text-white flex flex-wrap pl-4 md:pl-64"
       >
@@ -16,7 +16,7 @@
             <h1 class="md:text-6xl text-4xl font-bold bg-indigo-600">
               {{ title }}
             </h1>
-            <p>La Boutique de la Argentina, de tu casa y de tu corazón</p>
+            <p>La Boutique de la Argentina, la boutique de tú hogar</p>
           </div>
         </div>
         <div class="md:pl-80 md:ml-36 md:w-full md:pb-24 md:w-1/2">
@@ -43,60 +43,53 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 pt-12 px-20" style="grid-auto-rows: auto;">
-  <div
-    *ngFor="let p of data"
-    class="m-6  justify-center items-center"
-  >
-    <div class="w-full " >
-      <div class="bg-white shadow-lg hover:shadow-xl rounded-lg ">
-        <img style="width:100%; height:15vw; object-fit: cover;"
-          class="bg-gray-400 h-64 rounded-t-lg p-4 bg-no-repeat bg-center bg-cover"
-          [src]="p.urls.regular"
-        />
-        <div class="text-right">
-          <button
-            class="text-pink-500 hover:text-pink-600 p-2 rounded-full"
-            style="background: rgba(0, 0, 0, 0.3)"
-          ></button>
-        </div>
-
-        <div class="flex justify-between items-start px-2 pt-2">
-          <div class="p-2 flex-grow">
-            <h1 class="font-medium text-xl font-poppins">{{ p.title }}</h1>
-            <p class="text-gray-500 font-nunito" title="">
-              {{ p.alt_description }}
-            </p>
-            <p>{{ p.user.name }}</p>
-          </div>
-          <div class="p-2 text-right">
-            <div class="text-teal-500 font-semibold text-lg font-poppins">
-              ${{ p.height }}
+  <div class="pt-16 grid grid-cols-1 md:grid-cols-3 mx-20">
+    <div *ngFor="let p of data" class="m-6 justify-center items-center">
+      <div class="">
+        <div class="bg-white shadow-lg hover:shadow-xl rounded-lg">
+          <img
+            style="width: 100%; height: 15vw; object-fit: cover"
+            class="bg-gray-400 h-64 rounded-t-lg p-4 bg-no-repeat bg-center bg-cover"
+            [src]="p.urls.regular"
+          />
+          <div class="justify-between items-start px-2 pt-2">
+            <div class="p-2 flex-grow">
+              <h1 class="font-medium text-xl font-poppins" title="">
+                {{ p.user.name }}
+              </h1>
+              <p class="text-gray-500 text-xs font-nunito" title="">
+                {{ p.alt_description }}
+              </p>
+              <p>{{ p.likes }} times bought</p>
             </div>
-            <div class="text-xs text-gray-500 line-through font-poppins">
-              ${{ p.width }}
+            <div class="p-2 text-right">
+              <div class="text-teal-500 font-semibold text-lg font-poppins">
+                ${{ p.height }}
+              </div>
+              <div class="text-xs text-gray-500 line-through font-poppins">
+                ${{ p.width }}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="flex justify-center items-center px-2 pb-2">
-          <div class="w-1/2 p-2">
-            <button
-              class="block w-full bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
-            >
-              Details
-            </button>
-          </div>
-          <div class="w-1/2 p-2">
-            <button
-              class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
-            >
-              Add to cart
-            </button>
+          <div class="flex justify-center items-center px-2 pb-2">
+            <div class="w-1/2 p-2">
+              <button
+                class="block w-full bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
+              >
+                Details
+              </button>
+            </div>
+            <div class="w-1/2 p-2">
+              <button
+                class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
+              >
+                Add to cart
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>

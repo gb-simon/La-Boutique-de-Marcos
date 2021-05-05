@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 const appRoutes: Routes = [
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'faq', component: FaqComponent },
   { path: '',   redirectTo: '', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -44,6 +46,8 @@ const appRoutes: Routes = [
     FrontComponent,
     PageNotFoundComponent,
     ContactComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

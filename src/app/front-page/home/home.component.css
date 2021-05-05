@@ -2,11 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-div {
+.home {
   color: white;
 }
 
-input{
+input {
   color: black !important;
 }
 .background {

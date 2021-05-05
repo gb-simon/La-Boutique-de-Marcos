@@ -1,31 +1,56 @@
 <app-header></app-header>
-<div class="pt-12 md:flex flex-col md:flex-row md:min-h-screen md:w-64">
+<div class="pt-20 grid grid-cols-1 md:grid-cols-4 md:w-full">
     <nav
       :class="{'block': open, 'hidden': !open}"
       class="flex-grow md:block pl-4 pb-4 md:pb-0 md:overflow-y-auto"
     >
       <h1
         class="block pl-4 py-2 mt-2 font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
       >
-        Preguntas
+        Frequently Asked Questions
       </h1>
-      <a
+      <a type="button" (click)="ShowDiv('A')"  
         class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
-        >Boutique</a
+        >What is La Boutique?</a
       >
-      <a
+      <a type="button" (click)="ShowDiv('B')"  
         class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
-        >Register</a
+        >What do I have to do to publish my products?</a
       >
-      <a
+      <a type="button" (click)="ShowDiv('C')" 
         class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="#"
-        >founder</a
+        >what benefits do i get if i register in the boutique?</a
       >
     </nav>
-  </div>
+    
+    <div class="ml-32" *ngIf="currDiv == 'A'">
+        
+        <p>La Boutique is a garage project we started as a joke. It is called "La Boutique de Marcos". Marcos is our Front-End Dev.
+            La Boutique is an e-commerce where you can look for all kinds of products, you can filter by categories, select a product, and put it on the car as you can keep browsing our website!</p>
+    
+       
+        
+    </div>
 
-  <app-footer></app-footer>
+    <div class="ml-32" *ngIf="currDiv == 'B'">
+    
+        <h1>¿Como nace la Boutique?</h1>
+        <p>La boutique nace por iniciativa de Gonzalo</p>
+    
+       
+        
+    </div>
+
+    <div class="ml-32" *ngIf="currDiv === 'C'">
+     
+    
+        <h1>¿Es gratis?</h1>
+        <p>La Boutique es gratis</p>
+        
+    </div>
+
+</div>
+
+<app-footer></app-footer>
+
+  

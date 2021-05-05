@@ -46,7 +46,8 @@ const appRoutes: Routes = [
     FrontComponent,
     PageNotFoundComponent,
     ContactComponent,
-    FaqComponent,
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

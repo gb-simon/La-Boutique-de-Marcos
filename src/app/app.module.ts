@@ -48,6 +48,7 @@ const appRoutes: Routes = [
     ContactComponent,
     RegisterComponent,
     LoginComponent,
+    FaqComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

@@ -17,6 +17,7 @@ import { FrontComponent } from './front-page/front.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const appRoutes: Routes = [
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '',   redirectTo: '', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -41,6 +43,7 @@ const appRoutes: Routes = [
     AboutComponent,
     FrontComponent,
     PageNotFoundComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

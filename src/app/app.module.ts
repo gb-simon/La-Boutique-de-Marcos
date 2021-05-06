@@ -4,7 +4,7 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./front-page/home/home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { FooterComponent } from "./front-page/footer/footer.component";
+import { FooterComponent } from "./footer/footer.component";
 import { CommerceComponent } from "./front-page/commerce/commerce.component";
 import { FiltersComponent } from "./front-page/filters/filters.component";
 import { HttpClientModule } from "@angular/common/http";
@@ -19,7 +19,6 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
-
 
 const appRoutes: Routes = [
   { path: '', component: FrontComponent },

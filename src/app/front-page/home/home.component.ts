@@ -10,7 +10,6 @@ export class HomeComponent {
   title = "La Boutique";
 
   @Input() slides;
-  quantity: 30;
   public searchKeyword = "";
   public data = [];
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query="`;

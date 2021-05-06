@@ -1,60 +1,43 @@
-<input
-  class="md:text-1xl text-black p-2 l-full border border-transparent focus:outline-none focus:ring-2 focus:ring-green-900 focus:border-transparent"
-  type="search"
-  placeholder="Search in LaBoutique "
-  name="searchKeyword"
-  [(ngModel)]="searchKeyword"
-/>
-<button class="ml-4 btn btn-lg btn-success" (click)="searchImage()">Go</button>​
-
-<div
-  *ngFor="let p of data"
-  class="m-6 pt-6 justify-center items-center min-h-screen"
->
+<div class="m-6 pt-6 justify-center items-center min-h-screen">
   <div class="w-full p-2">
     <div class="bg-white shadow-lg hover:shadow-xl rounded-lg">
-      <div
+      <!-- <img
         class="bg-gray-400 h-64 rounded-t-lg p-4 bg-no-repeat bg-center bg-cover"
-        [src]="p.urls.regular"
+        src="https://source.unsplash.com/random"
+      /> -->
+      <div class="text-right">
+        <button
+          class="text-pink-500 hover:text-pink-600 p-2 rounded-full"
+          style="background: rgba(0, 0, 0, 0.3)"
+        ></button>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-start px-2 pt-2">
+      <div class="p-2 flex-grow">
+        <h1 class="font-medium text-xl font-poppins">Product name</h1>
+        <p class="text-gray-500 font-nunito">Short description here</p>
+      </div>
+      <div class="p-2 text-right">
+        <div class="text-teal-500 font-semibold text-lg font-poppins">$40</div>
+        <div class="text-xs text-gray-500 line-through font-poppins">$100</div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center px-2 pb-2">
+      <div class="w-1/2 p-2">
+        <button
+          class="block w-full bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
         >
-        <div class="text-right">
-          <button
-            class="text-pink-500 hover:text-pink-600 p-2 rounded-full"
-            style="background: rgba(0, 0, 0, 0.3)"
-          ></button>
-        </div>
+          Details
+        </button>
       </div>
-
-      <div class="flex justify-between items-start px-2 pt-2">
-        <div class="p-2 flex-grow">
-          <h1 class="font-medium text-xl font-poppins">Product name</h1>
-          <p class="text-gray-500 font-nunito">Short description here</p>
-        </div>
-        <div class="p-2 text-right">
-          <div class="text-teal-500 font-semibold text-lg font-poppins">
-            $40
-          </div>
-          <div class="text-xs text-gray-500 line-through font-poppins">
-            $100
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center items-center px-2 pb-2">
-        <div class="w-1/2 p-2">
-          <button
-            class="block w-full bg-teal-500 hover:bg-teal-600 text-white border-2 border-teal-500 hover:border-teal-600 px-3 py-2 rounded uppercase font-poppins font-medium"
-          >
-            Details
-          </button>
-        </div>
-        <div class="w-1/2 p-2">
-          <button
-            class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
-          >
-            Add to cart
-          </button>
-        </div>
+      <div class="w-1/2 p-2">
+        <button
+          class="block w-full bg-white hover:bg-gray-100 text-teal-500 border-2 border-teal-500 px-3 py-2 rounded uppercase font-poppins font-medium"
+        >
+          Add to cart
+        </button>
       </div>
     </div>
   </div>

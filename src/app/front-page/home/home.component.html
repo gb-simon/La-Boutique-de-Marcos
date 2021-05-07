@@ -5,18 +5,17 @@
       background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=894&q=80);
     "
   >
+    <app-header class="home bg-opacity-0"></app-header>
 
     <div class="home pt-36">
       <section
         class="flex items-center text-white flex flex-wrap pl-4 md:pl-64"
       >
         <div class="w-full md:w-1/2">
-          <div>
-            <h1 class="md:text-6xl text-4xl font-bold bg-indigo-600">
-              {{ title }}
-            </h1>
-            <p>La Boutique de la Argentina, la boutique de tu hogar</p>
-          </div>
+          <h1 class="md:text-6xl text-3xl font-bold bg-indigo-600">
+            {{ title }}
+          </h1>
+          <p>La Boutique de la Argentina, la boutique de tu hogar</p>
         </div>
         <div class="md:pl-80 md:ml-36 md:w-full md:pb-24 md:w-1/2">
           <div class="p-4">
@@ -44,7 +43,7 @@
 
   <div class="pt-16 grid grid-cols-1 md:grid-cols-3 mx-20">
     <div *ngFor="let p of data" class="m-6 justify-center items-center">
-      <div class="">
+      <div>
         <div class="bg-white shadow-lg hover:shadow-xl rounded-lg">
           <img
             style="width: 100%; height: 15vw; object-fit: cover"

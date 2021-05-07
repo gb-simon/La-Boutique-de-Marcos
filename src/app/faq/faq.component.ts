@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-faq',
-  templateUrl: './faq.component.html',
-  styleUrls: ['./faq.component.css']
+  selector: "app-faq",
+  templateUrl: "./faq.component.html",
+  styleUrls: ["./faq.component.css"],
 })
 export class FaqComponent implements OnInit {
+  currDiv = '';
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {}
+
+  ShowDiv(divVal: string) {
+    this.currDiv = divVal;
+}
+
 
 }

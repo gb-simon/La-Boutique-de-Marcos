@@ -1,64 +1,60 @@
-<<<<<<< HEAD
-<div class="pt-12 md:flex flex-col md:flex-row md:min-h-screen md:w-64">
-<div class=" grid grid-cols-1 md:grid-cols-4 md:w-full">
-=======
-<div class="grid grid-cols-1 md:grid-cols-4 md:w-full pb-12" style= "background-image: assets/bg-faq">
->>>>>>> c2d9c10d9e51d4a63f7fc85b2f441612645eef32
-    <nav
-      :class="{'block': open, 'hidden': !open}"
-      class=" flex-grow md:block pl-4 pb-4 md:pb-0 md:overflow-y-auto"
+<app-header></app-header>
+<div class="md:box-border pr-12 pb-12 pt-12 md:p-24 grid grid-cols-1 md:grid-cols-2">
+  <nav :class="{'block': open, 'hidden': !open}">
+    <h1 class="pl-4 py-2 mt-2 font-semibold">Frequently Asked Questions</h1>
+    <a
+      type="button"
+      (click)="ShowDiv('A')"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold"
+      >What is La Boutique?</a
     >
-      <h1
-        class="block pl-4 py-2 mt-2 font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >
-        Frequently Asked Questions
-      </h1>
-      <a type="button" (click)="ShowDiv('A')"  
-        class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        >What is La Boutique?</a
-      >
-      <a type="button" (click)="ShowDiv('B')"  
-        class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        >What benefits do i get if i register in the boutique?</a
-      >
-      <a type="button" (click)="ShowDiv('C')" 
-        class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        >Who have made La Boutique?</a
-      >
-    </nav>
-<<<<<<< HEAD
+    <a
+      type="button"
+      (click)="ShowDiv('B')"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold"
+      >What benefits do i get if i register in the boutique?</a
+    >
+    <a
+      type="button"
+      (click)="ShowDiv('C')"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold"
+      >Who have made La Boutique?</a
+    >
+  </nav>
+
+  <div *ngIf="currDiv == 'A'">
+    <p>
+      La Boutique de Marcos is a garage project we started as a joke, Marcos is
+      our Front-End Dev. La Boutique is an e-commerce where you can look for all
+      kinds of products, you can filter by categories, select a product, and put
+      it on the car as you can keep browsing our website!
+    </p>
   </div>
-=======
-    
-      <div  *ngIf="currDiv == 'A'">
-          
-          <p>La Boutique is a garage project we started as a joke. It is called "La Boutique de Marcos". Marcos is our Front-End Dev.
-              La Boutique is an e-commerce where you can look for all kinds of products, you can filter by categories, select a product, and put it on the car as you can keep browsing our website!</p>
-      
-        
-          
-      </div>
 
-      <div  *ngIf="currDiv == 'B'">
-      
-          
-          <p>What benefits do I get if I register in the boutique? By using La Boutique you make the world better... and earn IQ. When registering on our website, you're not only having another place to publish your products, you're being part of a whole new market where customers and sellers go first. If is there something that users highlight on our website is the great user experience we offer, that makes transactions faster than the speed of light!</p>
+  <div *ngIf="currDiv == 'B'">
+    <p>
+      By using La Boutique you make the world better... and earn IQ. When
+      registering on our website, you're not only having another place to
+      publish your products, you're being part of a whole new market where
+      customers and sellers go first. If is there something that users highlight
+      on our website is the great user experience we offer, that makes
+      transactions faster than the speed of light!
+    </p>
+  </div>
 
-        
-          
-      </div>
-
-      <div  *ngIf="currDiv === 'C'">
-      
-          <p>To know more <span href="" style="text-decoration: underline;">about us</span> you can check on the about section, there you'll find information about the developers and their roles on the project!</p>
-
-          
-          
-      </div>
-
+  <div *ngIf="currDiv === 'C'">
+    <p>
+      To know more
+      <span
+        routerLink="/about"
+        routerLinkActive="active"
+        class="cursor-pointer underline"
+        >about us</span
+      >
+      you can check on the about section, there you'll find information about
+      the developers and their roles on the project!
+    </p>
+  </div>
 </div>
 
 <app-footer></app-footer>
-
-  
->>>>>>> c2d9c10d9e51d4a63f7fc85b2f441612645eef32

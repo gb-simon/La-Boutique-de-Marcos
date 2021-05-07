@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
+import { QuoteComponent } from './front-page/quote/quote.component';
 
 const appRoutes: Routes = [
   { path: '', component: FrontComponent },
@@ -47,7 +48,8 @@ const appRoutes: Routes = [
     ContactComponent,
     RegisterComponent,
     LoginComponent,
-    FaqComponent
+    FaqComponent,
+    QuoteComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

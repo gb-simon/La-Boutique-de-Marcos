@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <div class="pt-12 md:flex flex-col md:flex-row md:min-h-screen md:w-64">
 <div class=" grid grid-cols-1 md:grid-cols-4 md:w-full">
+=======
+<div class="grid grid-cols-1 md:grid-cols-4 md:w-full pb-12" style= "background-image: assets/bg-faq">
+>>>>>>> c2d9c10d9e51d4a63f7fc85b2f441612645eef32
     <nav
       :class="{'block': open, 'hidden': !open}"
       class=" flex-grow md:block pl-4 pb-4 md:pb-0 md:overflow-y-auto"
@@ -22,4 +26,39 @@
         >Who have made La Boutique?</a
       >
     </nav>
+<<<<<<< HEAD
   </div>
+=======
+    
+      <div  *ngIf="currDiv == 'A'">
+          
+          <p>La Boutique is a garage project we started as a joke. It is called "La Boutique de Marcos". Marcos is our Front-End Dev.
+              La Boutique is an e-commerce where you can look for all kinds of products, you can filter by categories, select a product, and put it on the car as you can keep browsing our website!</p>
+      
+        
+          
+      </div>
+
+      <div  *ngIf="currDiv == 'B'">
+      
+          
+          <p>What benefits do I get if I register in the boutique? By using La Boutique you make the world better... and earn IQ. When registering on our website, you're not only having another place to publish your products, you're being part of a whole new market where customers and sellers go first. If is there something that users highlight on our website is the great user experience we offer, that makes transactions faster than the speed of light!</p>
+
+        
+          
+      </div>
+
+      <div  *ngIf="currDiv === 'C'">
+      
+          <p>To know more <span href="" style="text-decoration: underline;">about us</span> you can check on the about section, there you'll find information about the developers and their roles on the project!</p>
+
+          
+          
+      </div>
+
+</div>
+
+<app-footer></app-footer>
+
+  
+>>>>>>> c2d9c10d9e51d4a63f7fc85b2f441612645eef32

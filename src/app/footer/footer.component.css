@@ -3,14 +3,6 @@
 @import "tailwindcss/utilities";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-.footer {
-  color: white;
-  text-align: center;
-  padding: 10px;
-  bottom:0;
-  width:100%;
-}
-
 .fa {
   display: flex;
   justify-content: center;
@@ -55,3 +47,4 @@
   color: rgb(51, 12, 192);
   background-color: transparent;
 }
+

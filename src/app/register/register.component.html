@@ -1,58 +1,74 @@
+<body
+  class="background bg-fixed bg-auto text-gray-100 px-8"
+  style="
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=894&q=80);
+  "
+>
+
 <app-header></app-header>
 
-<div>
-  <h1>Register</h1>
-  <a
-    routerLink=""
-    routerLinkActive="active"
-    type="button"
-    href="#"
-    class="cursor-pointer"
-    type="button"
-  >
-    Get back
-  </a>
-
-  <form action="/loginpage.php">
+<div class=" flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-md w-full space-y-8">
     <div>
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr />
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required />
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required />
-
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input
-        type="password"
-        placeholder="Repeat Password"
-        name="psw-repeat"
-        required
-      />
-
-      <label>
-        <input
-          type="checkbox"
-          checked="checked"
-          name="remember"
-          style="margin-bottom: 15px"
-        />
-        Remember me
-      </label>
-
-      <p>
-        By creating an account you agree to our
-        <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+      <img class="mx-auto h-20 w-auto" src="assets/logo.png" alt="Workflow">
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-white">
+        Sign up
+      </h2>
+      <p class="mt-12 text-center text-sm text-white">
+        Please 
+        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+          fill in this form to create an account.
+        </a>
       </p>
-
-      <div style="padding: 15px">
-        <button type="button" style="padding: 15px">Cancel</button>
-        <button type="submit" style="padding: 15px">Sign Up</button>
-      </div>
+      
+      
     </div>
-  </form>
-</div>
+    <form class="mt-8 space-y-6" action="#" method="POST">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Repeat Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Repeat Password">
+        </div>
+      </div>
 
-<app-footer></app-footer>
+      <div class=" items-center justify-between">
+        <div class="flex items-center">
+          <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+          <label for="remember_me" class="ml-2 block text-sm text-white">
+            Remember me
+          </label>
+        </div><br/>
+        <div class="text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>
+        </div>
+
+        
+        </div>
+      
+
+      <div>
+        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+            <!-- Heroicon name: solid/lock-closed -->
+            <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+          </span>
+          Sign Up
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>

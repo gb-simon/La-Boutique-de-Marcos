@@ -4,13 +4,11 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./front-page/home/home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { FooterComponent } from "./front-page/footer/footer.component";
+import { FooterComponent } from "./footer/footer.component";
 import { CommerceComponent } from "./front-page/commerce/commerce.component";
-import { FiltersComponent } from "./front-page/filters/filters.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { ProductComponent } from "./front-page/product/product.component";
-import { SearchComponent } from './front-page/search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { FrontComponent } from './front-page/front.component';
@@ -19,7 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
-
+import { QuoteComponent } from './front-page/quote/quote.component';
 
 const appRoutes: Routes = [
   { path: '', component: FrontComponent },
@@ -39,15 +37,15 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     CommerceComponent,
-    FiltersComponent,
     ProductComponent,
-    SearchComponent,
     AboutComponent,
     FrontComponent,
     PageNotFoundComponent,
     ContactComponent,
     RegisterComponent,
     LoginComponent,
+    FaqComponent,
+    QuoteComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

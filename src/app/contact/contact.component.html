@@ -1,8 +1,14 @@
-<body class="background bg-fixed bg-auto text-gray-100 px-8 py-12" style="
-background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=894&q=80);
-">
+<body
+  class="background bg-fixed bg-auto text-gray-100 px-8"
+  style="
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=894&q=80);
+  "
+>
+  <app-header></app-header>
+
   <div
-    class="max-w-screen-xl px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg"
+    class="mt-8  md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg "
   >
     <div class="flex flex-col justify-between">
       <div>
@@ -10,10 +16,12 @@ background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c
           Lets get in touch!
         </h2>
         <div class="text-gray-700 mt-8">
-          Do you have any question? Send us an <span class="underline">email</span>.
+          Do you have any question? Send us an
+          <span class="underline">email</span>.
         </div>
       </div>
     </div>
+    <br>
     <div class="">
       <div>
         <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
@@ -33,12 +41,12 @@ background-image: url(https://images.unsplash.com/photo-1601233633669-473f01160c
       <div class="mt-8">
         <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
         <textarea
-          class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+          class="w-full h-28 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         ></textarea>
       </div>
       <div class="mt-8">
         <button
-          class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+          class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-black p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
         >
           Send Message
         </button>

@@ -1,16 +1,17 @@
-<div class="md:flex flex-col md:flex-row md:w-64">
+<div class="md:flex">
+<div class="md:flex flex-col md:flex-row md:w-56">
   <nav
     :class="{'block': open, 'hidden': !open}"
     class="flex-grow md:block pl-4 pb-4 md:pb-0 md:overflow-y-auto"
   >
     <h1
-      class="block pl-4 py-2 mt-2 font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="block pl-4 py-2 mt-2 font-semibold "
       href="#"
     >
       Filters
     </h1>
     <button
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold "
       value="tech"
       class="ml-4 btn btn-lg btn-success"
       (click)="searchImage_tech()"
@@ -18,14 +19,14 @@
       {{ title_1 }}
     </button>
     <a
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold"
       value="clothes"
       class="ml-4 btn btn-lg btn-success"
       (click)="searchImage_clothes()"
       >{{ title_2 }}</a
     >
     <a
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="block pl-4 py-2 mt-2 text-sm font-semibold"
       value="food"
       class="ml-4 btn btn-lg btn-success"
       (click)="searchImage_food()"
@@ -33,6 +34,9 @@
     >
   </nav>
 </div>
+
+<div class="grid grid-cols-1 md:grid-cols-3">
+
 
 <div *ngFor="let p of data" class="m-6 justify-center items-center">
   <div>
@@ -80,4 +84,6 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 </div>

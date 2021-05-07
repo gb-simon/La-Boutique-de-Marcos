@@ -1,7 +1,9 @@
 import { Component, Input } from "@angular/core";
 import { environment } from "../../../environments/environment";
 import { HttpClient } from "@angular/common/http";
-
+window.onload = function(){
+  document.getElementById('clothes').click();
+}
 @Component({
   selector: "app-product",
   templateUrl: "./product.component.html",
@@ -21,6 +23,8 @@ export class ProductComponent {
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query=`;
 
   constructor(private http: HttpClient) {}
+
+  
   searchImage_clothes() {
     this.http.get(this.url + this.clothes).subscribe((res) => {
       this.data = res["results"];

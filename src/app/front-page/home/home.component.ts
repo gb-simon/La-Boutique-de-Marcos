@@ -14,12 +14,12 @@ export class HomeComponent {
   public data = [];
   public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query="`;
   trends = "radio, phones, television, coffee";
-  
-  constructor(private http: HttpClient) {}
 
+  constructor(private http: HttpClient) {}
 
   searchImage() {
     this.http.get(this.url + this.searchKeyword).subscribe((res) => {
       this.data = res["results"];
     });
-  }}
+  }
+}

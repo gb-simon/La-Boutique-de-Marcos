@@ -8,9 +8,6 @@ import { Component, OnInit } from "@angular/core";
 
 export class FiltersComponent implements OnInit {
 
-  title_1 = "Clothes";
-  title_2 = "Technologies";
-  title_3 = "Food";
 
   constructor() {}
 

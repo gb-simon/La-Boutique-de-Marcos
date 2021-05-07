@@ -15,7 +15,15 @@
           <h1 class="md:text-6xl text-3xl font-bold bg-indigo-600">
             {{ title }}
           </h1>
-          <p>La Boutique de la Argentina, la boutique de tu hogar</p>
+          <p class="pb-16">
+            La Boutique de la Argentina, la boutique de tu hogar
+          </p>
+          <div *ngIf="loading; else content">
+            <h1 id="loading">loading...</h1>
+          </div>
+          <ng-template #content>
+            <app-quote [quote]="quote.quote" [tweetURL]="tweetURL"></app-quote>
+          </ng-template>
         </div>
 
         <div class="md:pl-80 md:ml-36 md:w-full md:pb-24 md:w-1/2">

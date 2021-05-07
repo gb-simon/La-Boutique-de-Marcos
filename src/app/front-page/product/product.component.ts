@@ -18,7 +18,7 @@ export class ProductComponent {
   title_3 = "Food";
 
   public data = [];
-  public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&query=`;
+  public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query=`;
 
   constructor(private http: HttpClient) {}
   searchImage_clothes() {

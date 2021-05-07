@@ -6,11 +6,9 @@ import { HomeComponent } from "./front-page/home/home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FooterComponent } from "./footer/footer.component";
 import { CommerceComponent } from "./front-page/commerce/commerce.component";
-import { FiltersComponent } from "./front-page/filters/filters.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { ProductComponent } from "./front-page/product/product.component";
-import { SearchComponent } from './front-page/search/search.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { FrontComponent } from './front-page/front.component';
@@ -39,9 +37,7 @@ const appRoutes: Routes = [
     HomeComponent,
     FooterComponent,
     CommerceComponent,
-    FiltersComponent,
     ProductComponent,
-    SearchComponent,
     AboutComponent,
     FrontComponent,
     PageNotFoundComponent,

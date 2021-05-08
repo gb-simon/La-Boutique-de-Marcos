@@ -1,6 +1,5 @@
-const ACCESS_KEY = "ZrFuDKyLgJ4ZUMHdVzGTQWkA3qjU9E_vrVAS5IDGpio";
-
 export const environment = {
   production: true,
-  client_id: ACCESS_KEY,
+  client_id: 'GSoPAcAxWZ4p8h_arZmHLWiqBlNdHN6EVvfwsdogvF0',
+  // env.UNSPLASH_CLIENT_ID,
 };

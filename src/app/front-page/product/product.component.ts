@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-import { environment } from "../../../environments/environment";
 import { HttpClient } from "@angular/common/http";
 window.onload = function(){
   document.getElementById('clothes').click();
@@ -20,7 +19,7 @@ export class ProductComponent {
   title_3 = "Food";
 
   public data = [];
-  public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query=`;
+  public url = `https://api.unsplash.com/search/photos?client_id=GSoPAcAxWZ4p8h_arZmHLWiqBlNdHN6EVvfwsdogvF0&per_page=6&query=`;
 
   constructor(private http: HttpClient) {}
 

@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { environment } from "../../../environments/environment";
 import { HttpClient } from "@angular/common/http";
 
 interface Quote {
@@ -19,7 +18,7 @@ export class HomeComponent implements OnInit {
   @Input() slides;
   public searchKeyword = "";
   public data = [];
-  public url = `https://api.unsplash.com/search/photos?client_id=${environment.client_id}&per_page=6&query="`;
+  public url = `https://api.unsplash.com/search/photos?client_id=GSoPAcAxWZ4p8h_arZmHLWiqBlNdHN6EVvfwsdogvF0&per_page=6&query="`;
   trends = "radio, phones, television, coffee";
   loading: boolean = true;
   quote!: Quote;

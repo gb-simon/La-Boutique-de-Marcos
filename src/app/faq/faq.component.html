@@ -8,28 +8,68 @@
     :class="{'block': open, 'hidden': !open}"
     class="flex-grow md:block pl-4 pb-4 md:pb-0 md:overflow-y-auto"
   >
-    <h1
-      class="block pl-4 py-2 mt-2 font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-    >
+    <h1 class="block pl-4 py-2 mt-2 font-semibold">
       Frequently Asked Questions
     </h1>
     <a
       type="button"
       (click)="ShowDiv('A')"
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="
+        block
+        pl-4
+        py-2
+        mt-2
+        text-sm
+        font-semibold
+        cursor-pointer
+        hover:bg-gray-700
+      "
       >What is La Boutique?</a
     >
     <a
       type="button"
       (click)="ShowDiv('B')"
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-      >What benefits do i get if i register in the boutique?</a
+      class="
+        block
+        pl-4
+        py-2
+        mt-2
+        text-sm
+        font-semibold
+        cursor-pointer
+        hover:bg-gray-700
+      "
+      >What benefits do I get in La Boutique?</a
     >
     <a
       type="button"
       (click)="ShowDiv('C')"
-      class="block pl-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+      class="
+        block
+        pl-4
+        py-2
+        mt-2
+        text-sm
+        font-semibold
+        cursor-pointer
+        hover:bg-gray-700
+      "
       >Who have made La Boutique?</a
+    >
+    <a
+      type="button"
+      (click)="ShowDiv('D')"
+      class="
+        block
+        pl-4
+        py-2
+        mt-2
+        text-sm
+        font-semibold
+        cursor-pointer
+        hover:bg-gray-700
+      "
+      >Know more about La Boutique</a
     >
   </nav>
 
@@ -65,6 +105,97 @@
       >
       you can check on the about section, there you'll find information about
       the developers and their roles on the project!
+    </p>
+  </div>
+
+  <div *ngIf="currDiv === 'D'">
+    <h2>Documentation</h2>
+    <br />
+    <p>
+      The Boutique is a project that we have decided to do to get practice in
+      web programming and also to give a point of reference to our team on how
+      experienced we are. This project is made with Angular and Tailwind CSS. It
+      should be noted that Angular is a tool that none of the developers had
+      used before, that is, in a very short time we have managed to internalize
+      with the framework and managed to create this site consisting of pure
+      Front-End.
+    </p>
+    <p>
+      It consists of 9 pages and 13 components. Among the pages we have
+      included:
+    </p>
+    <li>About</li>
+    <li>Contact</li>
+    <li>FAQ</li>
+    <li>Footer</li>
+    <li>Front Page</li>
+    <li>Login</li>
+    <li>Register</li>
+    <li>page-not-found</li>
+    <br />
+
+    <h2>---- Header ----</h2>
+    <p>
+      At the top of the page, there is a 'header' with five buttons that allows
+      the user to move through the different sections of the page.
+    </p>
+    <br />
+    <h2>---- Register ----</h2>
+    <p>
+      At the top of the page, there is a 'header' with five buttons that allows
+      the user to move through the different sections of the page The register
+      page, which is static and lacks a database, shows the user the possibility
+      of registering on the page, thus creating their user to be able to access
+      more features of the page and to be able to enter do 'login' later. It
+      also has the header at the top where you can go back and interact with the
+      different parts of the page.
+    </p>
+    <br />
+    <h2>---- Login ----</h2>
+    <p>
+      FAQ stands for Frequently Asked questions, is a
+      section for users to have answers to questions common and can get instant
+      information about our page.
+    </p>
+    <br />
+    <h2>---- FAQ ----</h2>
+    <p>
+      FAQ that refers to the English term Frequently asked questions, is a
+      section for users to have answers to questions common and can get instant
+      information about our page.
+    </p>
+    <br />
+    <h2>---- page-not-found ----</h2>
+    <p>
+      This page works to inform the user that the URL they have entered on our
+      page is incorrect and you should enter a valid value.
+    </p>
+    <br />
+    <h2>---- Front-Page ---</h2>
+    <p>
+      Inside Front Page, the Home page stands out, which is the first thing you see an Internet user when he enters the site. Here are four components
+    </p>
+    <li>Home</li>
+
+    <li>Quote</li>
+    <li>Commerce</li>
+    <li>Product</li>
+    <p>
+      A title is displayed on the Home page, a search bar that calls an API to
+      show the products that the user wants, it also shows a component called
+      Quote, which makes a random phrase appear with the possibility of making a
+      Tweet of that phrase if the user wishes. In the Commerce, page shows a
+      title, below that, a component appears 'child' that calls the API, this
+      shows some products with the possibility of filtering them into three
+      categories.
+    </p>
+    <br />
+    <h2>---- Footer ----</h2>
+    <p>
+      At the bottom of the page is the footer, where it shows page information
+      such as name, slogan, and social networks. What's more, There are two
+      links that lead the user to obtain information from the developers or to
+      have contact with them.
     </p>
   </div>
 </div>

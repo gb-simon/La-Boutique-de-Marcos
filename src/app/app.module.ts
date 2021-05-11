@@ -18,6 +18,13 @@ import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { FaqComponent } from './faq/faq.component';
 import { QuoteComponent } from './front-page/quote/quote.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: '', component: FrontComponent },
@@ -51,7 +58,7 @@ const appRoutes: Routes = [
     appRoutes,
     { enableTracing: true } // <-- debugging purposes only
   )
-, FormsModule, NgbModule, HttpClientModule],
+, FormsModule, NgbModule, HttpClientModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, NoopAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

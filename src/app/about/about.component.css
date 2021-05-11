@@ -10,3 +10,7 @@ a {
 a:hover {
   background-color: #ddd;
 }
+
+.footer{
+  width: 100%;
+}

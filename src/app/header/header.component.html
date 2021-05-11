@@ -1,7 +1,7 @@
 <mat-sidenav-container class="">
   <mat-sidenav
     #drawer
-    class=""
+    class="sidenav"
     fixedInViewport
     [ngClass]="{ hidden: (isHandset$ | async) === false }"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -15,8 +15,9 @@
       <a mat-list-item href="#">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
-    <mat-toolbar color="">
+    <mat-toolbar color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -24,10 +25,13 @@
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async"
       >
-        <mat-icon aria-label="">menu</mat-icon>
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>la-boutique</span>
+      <div class="flex" [ngClass]="{ hidden: (isHandset$ | async) === true }">
+        <a class="p-4" mat-list-item href="#">Link 1</a>
+        <a class="p-4" mat-list-item href="#">Link 2</a>
+        <a class="p-4" mat-list-item href="#">Link 3</a>
+      </div>
     </mat-toolbar>
-    <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>

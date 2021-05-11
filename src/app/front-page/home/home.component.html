@@ -58,7 +58,7 @@
       </section>
     </div>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3">
+  <div class="grid grid-cols-1 md:grid-cols-3 md:pl-20">
     <div *ngFor="let p of data" class="m-6 justify-center items-center">
       <div>
         <div class="bg-white shadow-lg hover:shadow-xl rounded-lg">
@@ -69,7 +69,7 @@
               bg-gray-400
               h-64
               rounded-t-lg
-              p-4
+              p-12
               bg-cover bg-no-repeat bg-center
             "
             [src]="p.urls.regular"
@@ -101,10 +101,10 @@
                   block
                   w-full
                   bg-yellow-200
-                  hover:bg-teal-600
+                  hover:bg-yellow-800
                   text-white
-                  border-2 border-teal-300
-                  hover:border-teal-600
+                  border-2 border-yellow-100
+                  hover:border-yellow-600
                   px-3
                   py-2
                   rounded
@@ -123,7 +123,7 @@
                   bg-white
                   hover:bg-gray-100
                   text-yellow-600
-                  border-2 border-teal-300
+                  border-2 border-yellow-500
                   px-3
                   py-2
                   rounded

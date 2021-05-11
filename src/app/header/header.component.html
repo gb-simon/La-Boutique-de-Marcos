@@ -1,4 +1,4 @@
-<mat-sidenav-container class="">
+<mat-sidenav-container class="header">
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -10,14 +10,54 @@
   >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a
+        routerLink="/contact"
+        routerLinkActive="active"
+        mat-list-item
+        type="button"
+        href="#"
+        class="button p-4"
+        >Contact</a
+      >
+      <a
+        routerLink="/faq"
+        routerLinkActive="active"
+        mat-list-item
+        type="button"
+        href="#"
+        class="button p-4"
+        >FAQs</a
+      >
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+        mat-list-item
+        type="button"
+        href="#"
+        class="button p-4"
+        >About Us</a
+      >
+      <a
+        routerLink="/login"
+        routerLinkActive="active"
+        mat-list-item
+        type="button"
+        class="button p-4"
+        >Login</a
+      >
+      <a
+        routerLink="/register"
+        routerLinkActive="active"
+        mat-list-item
+        type="button"
+        class="button p-4"
+        >Sign-up</a
+      >
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar class="header">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -28,10 +68,64 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <div class="flex" [ngClass]="{ hidden: (isHandset$ | async) === true }">
-        <a class="p-4" mat-list-item href="#">Link 1</a>
-        <a class="p-4" mat-list-item href="#">Link 2</a>
-        <a class="p-4" mat-list-item href="#">Link 3</a>
+        <div class="flex">
+          <img
+            routerLink=""
+            routerLinkActive="active"
+            src="assets/logo.png"
+            alt="image"
+            width="55px"
+            height="40px"
+            class="cursor-pointer"
+          />
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            mat-list-item
+            type="button"
+            href="#"
+            class="button p-4"
+            >Contact</a
+          >
+          <a
+            routerLink="/faq"
+            routerLinkActive="active"
+            mat-list-item
+            type="button"
+            href="#"
+            class="button p-4"
+            >FAQs</a
+          >
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            mat-list-item
+            type="button"
+            href="#"
+            class="button p-4"
+            >About Us</a
+          >
+        </div>
+        <div class="flex right-5">
+          <a
+            routerLink="/login"
+            routerLinkActive="active"
+            mat-list-item
+            type="button"
+            class="button p-4"
+            >Login</a
+          >
+          <a
+            routerLink="/register"
+            routerLinkActive="active"
+            mat-list-item
+            type="button"
+            class="button p-4"
+            >Sign-up</a
+          >
+        </div>
       </div>
     </mat-toolbar>
   </mat-sidenav-content>
+
 </mat-sidenav-container>

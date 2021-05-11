@@ -1,4 +1,4 @@
-<mat-sidenav-container class="header">
+<mat-sidenav-container class="sidenav header">
   <mat-sidenav
     #drawer
     class="sidenav"
@@ -9,7 +9,7 @@
     [opened]="(isHandset$ | async) === false"
   >
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <mat-nav-list class="sidenav">
       <a
         routerLink="/contact"
         routerLinkActive="active"

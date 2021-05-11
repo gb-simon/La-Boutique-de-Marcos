@@ -1,22 +1,21 @@
-
-
 .home {
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .home {
+    color: white;
+    height: 55vh;
+    margin-top: 150px;
+  }
 }
 
 input {
   color: black !important;
 }
 .background {
-  /* Add the blur effect */
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-

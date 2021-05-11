@@ -1,19 +1,31 @@
-<div class="background text-gray-100 mx-auto px-8">
+<body class="bg-gray-800 background text-black px-8">
   <app-header></app-header>
-  <div class="p-8 bg-gray-100 text-gray-900 rounded-lg shadow-lg">
-    <div class="justify-between">
+
+  <div
+    class="
+      max-w-screen-xl
+      px-8
+      md:px-12
+      lg:px-16
+      xl:px-32
+      py-16
+      mx-auto
+      bg-gray-100
+      text-gray-900
+      rounded-lg
+      shadow-lg
+    "
+  >
+    <div class="flex flex-col justify-between">
       <div>
         <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
           Lets get in touch!
         </h2>
         <div class="text-gray-700 mt-8">
           Do you have any question? Send us an
-          <span class="underline">email</span>.
+          <span class="underline">email</span> instead.
         </div>
       </div>
-    </div>
-    <br />
-    <div>
       <div>
         <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
         <input
@@ -28,7 +40,7 @@
             focus:shadow-outline
           "
           type="text"
-          placeholder="Name"
+          placeholder=""
         />
       </div>
       <div class="mt-8">
@@ -52,7 +64,6 @@
         <textarea
           class="
             w-full
-            h-28
             bg-gray-300
             text-gray-900
             mt-2
@@ -67,11 +78,8 @@
         <button
           class="
             uppercase
-            text-sm
+            text-sm text-black
             font-bold
-            tracking-wide
-            bg-indigo-500
-            text-black
             p-3
             rounded-lg
             w-full
@@ -84,4 +92,4 @@
       </div>
     </div>
   </div>
-</div>
+</body>

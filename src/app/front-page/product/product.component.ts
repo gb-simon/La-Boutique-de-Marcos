@@ -13,7 +13,7 @@ export class ProductComponent {
   public searchKeyword = "";
   public clothes = "clothes";
   public food = "food";
-  public tech = "tech";
+  public tech = "Technology";
   title_1 = "Technology";
   title_2 = "Clothes";
   title_3 = "Food";

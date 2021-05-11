@@ -52,7 +52,7 @@ const appRoutes: Routes = [
     RegisterComponent,
     LoginComponent,
     FaqComponent,
-    QuoteComponent
+    QuoteComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(
     appRoutes,

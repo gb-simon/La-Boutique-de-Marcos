@@ -1,7 +1,13 @@
 .sidenav {
   width: 200px;
+  padding-left: 30px;
 }
 
-.hidden{
-  display:none;
-  }
+.hidden {
+  display: none;
+}
+
+.header {
+  background: transparent;
+  color: white;
+}
